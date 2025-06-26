@@ -57,6 +57,7 @@ export function getUniversalComponents(): Record<
     s: stripExtras(htmlElements.S),
     i: stripExtras(htmlElements.I),
     q: stripExtras(htmlElements.Q),
+    u: ({ style, ...props }) => <Paragraph style={[style, { textDecorationLine: 'underline' }]} {...props} />,
     blockquote: stripExtras(htmlElements.BlockQuote),
     br: stripExtras(htmlElements.BR),
     mark: stripExtras(htmlElements.Mark),
