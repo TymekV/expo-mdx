@@ -1,5 +1,5 @@
 {
-  "name": "@bacons/mdx",
+  "name": "@tymekv/mdx",
   "version": "0.4.5",
   "description": "Universal MDX renderer for React Native",
   "main": "build/react/index",
@@ -47,7 +47,6 @@
     "@expo/html-elements": "~0.11.0",
     "@mdx-js/mdx": "^1.6.22",
     "unist-util-visit": "^1.4.1"
-    
   },
   "devDependencies": {
     "@swc/core": "~1.2.249",
