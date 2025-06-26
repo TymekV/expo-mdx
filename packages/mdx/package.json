@@ -1,6 +1,6 @@
 {
   "name": "@tymekv/mdx",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "Universal MDX renderer for React Native",
   "main": "build/react/index",
   "files": [
