@@ -1,11 +1,11 @@
-# @bacons/mdx
+# @tymekv/mdx
 
 Build-time [MDX](https://mdxjs.com) for Expo apps and websites.
 
 ## Add the package to your npm dependencies
 
 ```
-yarn add @bacons/mdx
+yarn add @tymekv/mdx
 ```
 
 ## Setup
@@ -16,7 +16,7 @@ Add support for importing `md` and `mdx` files in your `metro.config.js` file.
 
 ```js
 const { getDefaultConfig } = require("expo/metro-config");
-const { withMdx } = require("@bacons/mdx/metro");
+const { withMdx } = require("@tymekv/mdx/metro");
 
 const config = withMdx(getDefaultConfig(__dirname));
 
@@ -48,7 +48,7 @@ Create a custom metro transformer. This is used to transform MDX files into JS +
 
 ```js
 const upstreamTransformer = require("@expo/metro-config/babel-transformer");
-const MdxTransformer = require("@bacons/mdx/metro-transformer");
+const MdxTransformer = require("@tymekv/mdx/metro-transformer");
 
 module.exports.transform = async (props) => {
   // Then pass it to the upstream transformer.
@@ -95,7 +95,7 @@ By default, this package uses an incomplete set of universal React Native compon
 
 ```js
 import { Text } from "react-native";
-import { MDXComponents } from "@bacons/mdx";
+import { MDXComponents } from "@tymekv/mdx";
 
 export default function App() {
   return (
@@ -123,7 +123,7 @@ You can set the components for all children using the `MDXComponents` React cont
 
 ```js
 import { Text } from "react-native";
-import { MDXComponents } from "@bacons/mdx";
+import { MDXComponents } from "@tymekv/mdx";
 
 export default function App() {
   // Pass any HTML element as a key to the MDXComponents component.
@@ -149,7 +149,7 @@ export default function App() {
 This package works similarly to most docs sites. You create high-level styles for the entire site. This can be cascaded down to reduce the scope of a style.
 
 ```js
-import { MDXStyles } from "@bacons/mdx";
+import { MDXStyles } from "@tymekv/mdx";
 
 export default function App() {
   // Pass any HTML element as a key to the MDXStyles component.
@@ -191,7 +191,7 @@ Now create a file that declares the module.
 ```ts
 declare module "*.mdx" {
   import React from "react";
-  import { CustomComponentsProp } from "@bacons/mdx";
+  import { CustomComponentsProp } from "@tymekv/mdx";
   const Component: React.FC<{
     components?: CustomComponentsProp;
   }>;
@@ -211,7 +211,7 @@ Simply add the following to your `babel.config.js`, and clear the transform cach
 module.exports = function (api) {
   api.cache(true);
   return {
-    presets: [["babel-preset-expo", { jsxImportSource: "@bacons/mdx/jsx" }]],
+    presets: [["babel-preset-expo", { jsxImportSource: "@tymekv/mdx/jsx" }]],
   };
 };
 ```
@@ -234,7 +234,7 @@ This will break in production.
 It's possible to parse MDX to DOM elements instead of universal components. This can be useful when building for web-only or migrating from web-only. To do this, pull in the `getDOMComponents` function and pass it to the `components` prop of the MDX component.
 
 ```js
-import { getDOMComponents } from "@bacons/mdx";
+import { getDOMComponents } from "@tymekv/mdx";
 
 import Demo from "./readme.md";
 
@@ -263,7 +263,7 @@ And the DOM:
 1. Follow the steps detailed here: [https://nextjs.org/docs/advanced-features/using-mdx](https://nextjs.org/docs/advanced-features/using-mdx)
 2. Add the following packages to `transpile-modules` within your `next.config.js`:
    ```js
-   '@bacons/mdx',
+   '@tymekv/mdx',
    '@bacons/react-views',
    '@expo/html-elements',
    ```

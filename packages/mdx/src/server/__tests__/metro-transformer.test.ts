@@ -28,7 +28,7 @@ describe(transform, () => {
       true
     );
     expect(result.src).toMatchInlineSnapshot(`
-      "import { useMDXComponents } from \\"@bacons/mdx\\";
+      "import { useMDXComponents } from \\"@tymekv/mdx\\";
 
       const makeExpoMetroProvided = name => function MDXExpoMetroComponent({ __components, ...props}) {
         if (__components[name] == null) {
@@ -83,7 +83,7 @@ import Foo from './foo'
     });
 
     expect(result.src).toMatchInlineSnapshot(`
-      "import { useMDXComponents } from \\"@bacons/mdx\\";
+      "import { useMDXComponents } from \\"@tymekv/mdx\\";
 
       const makeExpoMetroProvided = name => function MDXExpoMetroComponent({ __components, ...props}) {
         if (__components[name] == null) {
@@ -127,7 +127,7 @@ import Foo from './foo'
     });
 
     expect(result.src).toMatchInlineSnapshot(`
-      "import { useMDXComponents } from \\"@bacons/mdx\\";
+      "import { useMDXComponents } from \\"@tymekv/mdx\\";
 
       const makeExpoMetroProvided = name => function MDXExpoMetroComponent({ __components, ...props}) {
         if (__components[name] == null) {

@@ -18,9 +18,9 @@ export function withMdx(
     );
   } else {
     console.warn(
-      `@bacons/mdx: Using custom babel transformer: ${config.transformer.babelTransformerPath}`
+      `@tymekv/mdx: Using custom babel transformer: ${config.transformer.babelTransformerPath}`
     );
-    console.warn(`Ensure it includes the MDX transformer from @bacons/mdx`);
+    console.warn(`Ensure it includes the MDX transformer from @tymekv/mdx`);
   }
 
   // Ensure md and mdx are supported

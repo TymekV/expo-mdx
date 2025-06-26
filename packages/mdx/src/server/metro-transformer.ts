@@ -13,12 +13,12 @@ const getTemplate = (rawMdxString: string) => {
   );
 
   return `"use client";
-import { useMDXComponents } from "@bacons/mdx";
+import { useMDXComponents } from "@tymekv/mdx";
 ${makeExpoMetroProvidedTemplate}
 ${replacedShortcodes.replace(
-  "return <MDXLayout",
-  "const html = { ...useMDXComponents(), ...(components ?? {}) };\n  const MDXLayout = html.Wrapper;\n  return <MDXLayout"
-)}`;
+    "return <MDXLayout",
+    "const html = { ...useMDXComponents(), ...(components ?? {}) };\n  const MDXLayout = html.Wrapper;\n  return <MDXLayout"
+  )}`;
 };
 
 const makeExpoMetroProvidedTemplate = `
