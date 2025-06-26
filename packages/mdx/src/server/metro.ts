@@ -14,7 +14,7 @@ export function withMdx(
     )
   ) {
     config.transformer.babelTransformerPath = require.resolve(
-      "@bacons/mdx/default-metro-transformer.js"
+      "@tymekv/mdx/default-metro-transformer.js"
     );
   } else {
     console.warn(
