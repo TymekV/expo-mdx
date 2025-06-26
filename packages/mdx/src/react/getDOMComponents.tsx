@@ -43,6 +43,7 @@ const HTML_KEYS = [
   "s",
   "i",
   "q",
+  "u",
   "blockquote",
   "br",
   "mark",
