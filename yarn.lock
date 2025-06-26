@@ -1916,6 +1916,16 @@
     "@babel/helper-string-parser" "^7.27.1"
     "@babel/helper-validator-identifier" "^7.27.1"
 
+"@bacons/mdx@*":
+  version "0.4.5"
+  resolved "https://registry.yarnpkg.com/@bacons/mdx/-/mdx-0.4.5.tgz#b80c2d992df5d386d94f1e41f74061313631edb7"
+  integrity sha512-ME5A6wDCOBI+RGXJRaNbRThmdadw6palSglCQPFuntDjtF9p0CdUAp67ChAXxgNP8eK2NShFjIkLpvqsHw4dWw==
+  dependencies:
+    "@bacons/react-views" "^1.1.3"
+    "@expo/html-elements" "~0.11.0"
+    "@mdx-js/mdx" "^1.6.22"
+    unist-util-visit "^1.4.1"
+
 "@bacons/react-views@^1.1.3":
   version "1.1.3"
   resolved "https://registry.yarnpkg.com/@bacons/react-views/-/react-views-1.1.3.tgz#06e7ae8803cc363d13d6fd06b828e10ad8bb3910"
